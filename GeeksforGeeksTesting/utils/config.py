@@ -1,6 +1,7 @@
 USERNAME = "sandeep.bodagala@gmail.com"
 PASSWORD = "Sandy@123"
 CARDNO = "4748467843517004"
+INVALID_CARDNO= "8458467843518454"
 EXPIRYMONTH = "11/26"
 CVV = "333"
 URL = "https://www.geeksforgeeks.org/"
