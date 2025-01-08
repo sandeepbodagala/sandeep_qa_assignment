@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
+import time
 
 class PremiumPage:
     def __init__(self, driver, wait):
@@ -22,7 +23,8 @@ class PremiumPage:
 
         windows_opened = self.driver.window_handles
         self.driver.switch_to.window(windows_opened[1])
-
         self.driver.find_element(*self.premium_card).click()
+
+        time.sleep(1)
         command = self.wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, self.premium_card_botton)))
         command.click()

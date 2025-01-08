@@ -15,7 +15,7 @@ class PaymentPage:
         self.pay_now_botton = "button[class = 'ui fluid button premium_pay_now_cta__N2BqV']"
         self.razor_pay_class = (By.CLASS_NAME, "razorpay-checkout-frame")
         self.card_field = (By.CSS_SELECTOR, "div[data-value='card']")
-        self.skip_otp = By.XPATH, "//button[text()='Skip OTP']"
+        self.skip_otp = (By.XPATH, "//button[text()='Skip OTP']")
 
     def go_to_payment_option(self):
         command = self.wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, self.pay_now_botton)))
